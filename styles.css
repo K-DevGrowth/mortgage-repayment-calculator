@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -214,4 +216,25 @@ label,
 
 .result-card div span {
     color: var(--Slate-500);
+}
+
+@media (max-width:450px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header #clear-btn {
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .container-card {
+        display: block;
+        border-radius: 0;
+    }
+
+    .right-card {
+        border-radius: 0;
+    }
 }
